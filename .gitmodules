@@ -1,0 +1,3 @@
+[submodule "openvqa"]
+	path = openvqa
+	url = git@github.com:MILVLG/openvqa.git
