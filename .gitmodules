@@ -1,3 +1,3 @@
-[submodule "openvqa"]
-	path = openvqa
-	url = git@github.com:MILVLG/openvqa.git
+[submodule "VQA-Flask-App"]
+	path = VQA-Flask-App
+	url = git@github.com:arya46/VQA-Flask-App.git
