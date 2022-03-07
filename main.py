@@ -6,6 +6,8 @@ import tensorflow as tf
 from VQANetwork import VQANetwork
 from VideoPlayer import VideoPlayer
 
+VIDEO_FILE = '../data/challenge_color_848x480.mp4'
+
 
 def user_input(question_queue, trigger_detection):
     while True:
@@ -32,7 +34,7 @@ if __name__ == '__main__':
 
     # initialize and start console text input and video player
     text_input = threading.Thread(target=user_input, args=(question_queue, trigger_detection,))
-    video = VideoPlayer('/home/a-f/universe/lumen/data/challenge_color_848x480.mp4', trigger_frame_retrieval, frame_queue)
+    video = VideoPlayer(VIDEO_FILE, trigger_frame_retrieval, frame_queue)
     video.start()
     text_input.start()
 
