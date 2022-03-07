@@ -11,6 +11,7 @@
 data/*
 !data/copy-video-here
 
+
 # Generated files
 .idea/**/contentModel.xml
 
